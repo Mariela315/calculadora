@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Remy Lebeau</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-500BUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhnd0JK28anv1"
+    crossorigin="anonymous">
+
+    <style>
+      body {
+        background: linear-gradient(135deg, #001f3f, #004080);
+        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #222;
+        margin: 0;
+        padding: 0;
+      }
+    
+      h1 {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 2.8em;
+        color: #f4b400;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        letter-spacing: 1.5px;
+      }
+    
+      .profile-card {
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+        max-width: 950px;
+        margin: 50px auto;
+        overflow: hidden;
+        border: 2px solid #f4b400;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    
+      .profile-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+    
+      .profile-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        background: linear-gradient(135deg, #011122, #02284e);
+        color: white;
+      }
+    
+      .profile-header img {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        border: 6px solid #f4b400;
+        object-fit: cover;
+        margin-right: 40px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      }
+    
+      .profile-header p {
+        font-size: 1.1rem;
+        margin: 5px 0;
+      }
+    
+      .section-title {
+        background-color: #508ecc;
+        color: #f4b400;
+        padding: 12px 15px;
+        font-size: 1.4em;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+      }
+    
+      .info-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 25px 40px;
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+      }
+    
+      .info-section:nth-child(even) {
+        background-color: #eef2f5;
+      }
+    
+      .info-section p {
+        margin: 8px 0;
+        font-size: 1rem;
+      }
+    
+      .label {
+        color: #004080;
+        font-weight: 600;
+      }
+    
+      hr {
+        width: 80%;
+        margin: 40px auto;
+        border: 1px solid #f4b400;
+      }
+    
+      .fa {
+        margin: 0 5px;
+      }
+    
+      @media (max-width: 768px) {
+        .profile-header {
+          flex-direction: column;
+          text-align: center;
+        }
+        .profile-header img {
+          margin: 0 0 20px 0;
+        }
+        .info-section {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>    
+</head>
+
+<body>
+
+  <h1>Perfil 5A</h1>
+
+  <div class="profile-card">
+    <div class="profile-header">
+      <img src="perfil.jpg" alt="Foto de perfil">
+      <div>
+        <p><span class="label">Género:</span> Femenino</p>
+        <p><span class="label">Raza:</span> Mestizo</p>
+        <p><span class="label">Nacimiento:</span> 17 julio 2008</p>
+        <p><span class="label">Calle:</span> Ambar</p>
+        <p><span class="label">Ciudad:</span> Reynosa</p>
+        <p><span class="label">Teléfono:</span> 789098776</p>
+        <p><span class="label">Celular:</span> 7727272562</p>
+      </div>
+    </div>
+
+    <div class="section-title">
+      <i class="fa fa-user"></i> Información Básica
+    </div>
+    <div class="info-section">
+      <div>
+        <p><span class="label">Correo:</span> maiela.com</p>
+        <p><span class="label">Altura:</span> 163 mts</p>
+        <p><span class="label">Peso:</span> 69 kg</p>
+        <p><span class="label">Color de pelo:</span> Negro</p>
+        <p><span class="label">Tipo de Sangre:</span> +A</p>
+      </div>
+      <div>
+        <p><span class="label">Signo Zodiacal:</span> Cancer</p>
+        <p><span class="label">Apellido Materno:</span> Aragón</p>
+        <p><span class="label">Estado Civil:</span> Soltera</p>
+        <p><span class="label">Educación:</span> Preparatoria</p>
+        <p><span class="label">Historial de enfermedades:</span> Ninguna</p>
+      </div>
+    </div>
+
+    <div class="section-title">
+      <i class="fa fa-briefcase"></i> Información de Empleo
+    </div>
+    <div class="info-section">
+      <div>
+        <p><span class="label">Estado del Empleo:</span> Alcom</p>
+        <p><span class="label">Salario Mensual:</span> mucho</p>
+        <p><span class="label">Ocupación:</span> de todo</p>
+      </div>
+      <div>
+        <p><span class="label">Nombre de la Empresa:</span> Alcom</p>
+        <p><span class="label">Tamaño de la Empresa:</span> No sé</p>
+        <p><span class="label">Industria:</span> mucho</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
